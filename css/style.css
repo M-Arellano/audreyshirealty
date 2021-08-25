@@ -412,11 +412,12 @@ iframe {
         CONTACT SECTION
 **************************************************/
 .contact {
-    width: 90%;
+    width: 100%;
     min-height: 100vh;
     text-align: center;
     padding: 2.8rem 0 2rem;
     margin: 0 auto;
+    background:  rgba(140, 157, 164, 0.267);
 }
 .contact h2,
 h3 {
@@ -489,20 +490,28 @@ td.email {
 .wechatqr img {
     width: 20%;
     text-align: center;
-    padding-top: .5rem;
+    margin-top: .5rem;
+    padding: .5rem;
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
 }
 .wechatqr h5 {
     width: 100%;
     text-align: center;
 }
+.mlsicon {
+    width: 40%;
+    height: auto;
+}
 .address {
+    background-color: rgb(140, 157, 164);
     width: 100%;
-    padding: 0;
+    padding-top: 1.5rem;
     margin: 0;
     text-align: center;
 }
 .address ul {
-    background-color: rgb(140, 157, 164);
+    
     color: whitesmoke;
     font-size: 1.2rem;
     list-style: none;
@@ -764,6 +773,10 @@ td.email {
         width: 100%;
         font-size: 1.2rem;
         text-align: center;
+    }
+    .mlsicon {
+        width: 25%;
+        height: auto;
     }
 
 
