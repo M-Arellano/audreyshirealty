@@ -296,10 +296,12 @@ header {
 .buy {
     background: rgb(197,199, 214);
     padding: 3rem 1rem 1rem;
+    min-height: 100vh;
 }
 .sell {
     background: rgb(228, 228, 225);
     padding: 3rem 1rem 1rem;
+    min-height: 100vh;
 }
 .buy,
 .sell {
@@ -307,29 +309,33 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 0rem;
 }
 
 .buy ol,
 .sell ul {
     line-height: 1.4rem;
     margin: 1rem 0 1rem 2rem;
+    font-size: .1rem;
 }
 .buy img,
 .sell img {
     width: 100%;
+    height: auto;
     max-width: 450px;
     border-radius: 10%;
     box-shadow: 4px 4px 4px gray;
 }
 .tips h2 {
-    padding-top: 1rem;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+}
+.tips li {
+    font-size: .9rem;
 }
 .tips section {
     align-items: center;
-    margin-top: 6rem;
-    min-width: ;30ch;
-    
+    margin-top: 2rem;
 }
 
 /*********************************************************
@@ -636,7 +642,7 @@ td.email {
     }
     #philosophy h2,
     #philosophy p {
-        color: whitesmoke;
+        color: rgb(245, 245, 245);
     }
 
     /*************************
@@ -647,6 +653,8 @@ td.email {
     .sell {
        display: flex;
        flex-direction: row;
+       gap: 1.5rem;
+       min-height: 50vh;
     }
     .sell {
         display: flex;
@@ -663,7 +671,10 @@ td.email {
         align-self: center;
         border-radius: 10%;
         box-shadow: 8px 8px 8px gray;
-        margin: ;0 1.5rem;
+    }
+    .tips section {
+        align-self: center;
+        margin-top: 0rem;
     }
     
     /*****************************
@@ -698,7 +709,7 @@ td.email {
     .success_logo {
         width: 20%;
         height: auto;
-        padding: 0;
+        padding: 1rem 0;
         margin: 0;
     }
     .contactwrapper {
@@ -812,8 +823,6 @@ td.email {
     .success_logo {
         width: 15%;
         height: auto;
-        padding: 0;
-        margin: 0;
     }
     .wechatqr img {
         width: 10%;
@@ -1046,14 +1055,17 @@ td.email {
     }
    
     .buy, .sell {
-        gap: 6rem;
+        gap: 8rem;
+    }.tips li {
+        font-size: 1.2rem;
+    }
+    .tips h2 {
+        font-size: 2rem;
     }
 
     .success_logo {
         width: 8%;
         height: auto;
-        padding: 0;
-        margin: 0;
     }
     .contact {
         padding-top: 2.75rem;
